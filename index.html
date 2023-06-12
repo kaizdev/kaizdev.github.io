@@ -1,1 +1,213 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+        />
+        <script
+            src="https://kit.fontawesome.com/0b9655ceb3.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js" defer></script>
+        <title>Kai's portfolio website</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="nav-bar nav-bar__list-container">
+                    <ul class="nav-bar nav-bar__list">
+                        <li><a href="#landing">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-bar nav-bar__hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>Menu</p>
+                </div>
+
+                <div id="mobile-nav">
+                    <div id="close-btn">
+                        <i class="fas fa-times fa-bars"></i>
+                    </div>
+                    <ul>
+                        <li><a href="#landing">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!------------------- Landing section --------------------->
+            <section id="landing" class="intro intro__section">
+                <div class="intro intro__name">
+                    <h2>Kai Zhang</h2>
+                    <div class="intro intro__job-desc">
+                        <h4>Aspiring Developer | Former Banker</h4>
+                    </div>
+                </div>
+            </section>
+
+            <!------------------- About section --------------------->
+
+            <section id="about" class="about about__section">
+                <h2>About</h2>
+                <hr />
+                <p>
+                    I am an aspiring developer looking to break into the tech
+                    industry after a career in banking and finance.
+                </p>
+                <p>
+                    I have always been fascinated by the power and scalability
+                    of technology and I'm excited to learn and pick up new
+                    skills in this ever evolving area.
+                </p>
+                <p>
+                    Over the years, I have seen first-hand how software
+                    solutions have streamlined processes and made banking more
+                    accessible.
+                </p>
+                <p>
+                    Within banking, I have worked in operations, fraud, policy,
+                    QA, and central risk. More recently, I worked in
+                    distribution governance within retail banking.
+                </p>
+                <p>
+                    I have a Bachelors in Commerce and Economics (Finance,
+                    Accounting and Financial Economics majors) from UNSW. I have
+                    also recently completed a Certificate IV in IT (Web
+                    Development) at TAFE NSW.
+                </p>
+            </section>
+
+            <!------------------- Skills section --------------------->
+            <section id="skills" class="skills skills__section">
+                <h2>Skills</h2>
+                <hr />
+                <p>I have experience with the following tech stacks:</p>
+
+                <table class="skills skills__icons">
+                    <tr>
+                        <td><i class="fa-brands fa-html5"></i> HTML5</td>
+                        <td><i class="fa-brands fa-css3"></i> CSS</td>
+                        <td><i class="fa-brands fa-sass"></i> SASS</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-brands fa-square-js"></i> JavaScript
+                        </td>
+                        <td><i class="fa-brands fa-python"></i> Python</td>
+                        <td><i class="fa-solid fa-database"></i> SQL</td>
+                    </tr>
+                    <td><i class="fa-brands fa-php"></i> PHP</td>
+                    <td><i class="fa-brands fa-github"></i> Github</td>
+
+                    <tr></tr>
+                </table>
+                <p>
+                    Some of the skills that I've acquired during my time in
+                    banking (and which will enhance my skills as a programmer
+                    include):
+                </p>
+
+                <ul>
+                    <li>Problem solving</li>
+                    <li>Analysis</li>
+                    <li>Attention to detail</li>
+                    <li>Project management</li>
+                    <li>Time management</li>
+                </ul>
+            </section>
+
+            <!------------------- Projects section --------------------->
+
+            <section id="projects" class="projects projects__section">
+                <h2>Projects</h2>
+                <hr />
+                <br />
+                <div>
+                    <h4>JavaScript Calculator</h4>
+                    <p>
+                        This project involved creating a functional calculator
+                        using JS. Give it a try!
+                    </p>
+                    <img src="./img/calculator.jpg" alt="Calculator" />
+                    <div class="projects projects__project-links">
+                        <a href="">Code</a>
+                        <a href="">Preview</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Morse Code Translator</h4>
+                    <p>This project is a web-based Morse Code translator.</p>
+                    <img src="./img/morse-code.jpg" alt="Morse Code" />
+                    <div class="projects projects__project-links">
+                        <a href="">Code</a>
+                        <a href="">Preview</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>React eShop</h4>
+                    <p>
+                        In this project I used React to create an e-commerce
+                        website which utilised Fetch Data, react-router-dom, and
+                        Firebase
+                    </p>
+                    <img src="./img/estore.jpg" alt="eStore" />
+                    <div class="projects projects__project-links">
+                        <a href="">Code</a>
+                        <a href="">Preview</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Google eBooks API</h4>
+                    <p>
+                        Using DOM manipulation and Asynchronous programming, as
+                        part of this project I created an API which allowed the
+                        user to search for a book inside the Google Books
+                        database and retrieve details about the book, such as
+                        author and the blurb
+                    </p>
+                    <img src="./img/book.jpg" alt="Books" />
+                    <div class="projects projects__project-links">
+                        <a href="">Code</a>
+                        <a href="">Preview</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!------------------- Contact section --------------------->
+        <section id="contact" class="contact contact__section">
+            <h2>Contact me</h2>
+            <hr />
+            <p>Contact me through Github or LinkedIn below:</p>
+            <ul class="contact contact__list">
+                <li>
+                    <a href="https://github.com/kaizdev"
+                        ><i class="fa-brands fa-github fa-xl"></i>Github</a
+                    >
+                </li>
+                <li>
+                    <a href="https://linkedin.com"
+                        ><i class="fa-brands fa-linkedin fa-xl"></i>LinkedIn</a
+                    >
+                </li>
+            </ul>
+        </section>
+    </body>
+</html>
