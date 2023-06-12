@@ -1,0 +1,49 @@
+@use "./theme" as theme;
+@use "./breakpoints.scss" as b;
+
+@mixin dark-back {
+    background-color: theme.$primary-blue;
+    color: white;
+}
+
+@mixin light-back {
+    background-color: theme.$secondary-blue;
+}
+
+// Create mixin for breakpoints and common device sizes
+@mixin phone {
+    @media only screen and (max-width: b.$small) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: (b.$small + 1px)) and (max-width: b.$medium) {
+        @content;
+    }
+}
+
+@mixin landscape-tablet {
+    @media only screen and (min-width: (b.$medium + 1px)) and (max-width: b.$large) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media only screen and (min-width: (b.$large + 1px)) and (max-width: b.$x-large) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: (b.$x-large + 1px)) {
+        @content;
+    }
+}
+
+//  Potential for later use:
+// @mixin flex($justify: center) {
+//     display: flex;
+//     justify-content: $justify;
+//     align-items: center;
+// }

@@ -1,0 +1,156 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.nav-bar__list-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100vw;
+  background-color: #b5dcee;
+  position: fixed;
+  top: 0;
+  font-size: 1.25rem;
+}
+.nav-bar__list li {
+  list-style-type: none;
+  display: inline-block;
+}
+.nav-bar__hamburger {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  font-size: 1.25rem;
+  padding-right: 10px;
+}
+
+#mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+#mobile-nav ul {
+  list-style-type: none;
+}
+#mobile-nav ul li {
+  padding: 10px;
+}
+#mobile-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.intro__section {
+  background-image: url(../img/background-mac.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+@media only screen and (max-width: 576px) {
+  .intro__section {
+    font-size: 2em;
+  }
+}
+.intro__name {
+  text-align: center;
+  position: relative;
+  top: 7rem;
+}
+.intro__job-desc {
+  font-size: medium;
+}
+
+.about__section {
+  background-color: #b5dcee;
+}
+
+.skills__section {
+  background-color: #004c6d;
+  color: white;
+}
+.skills__icons {
+  color: white;
+}
+.skills__icons td {
+  border: 1px solid white;
+  padding: 2px;
+  width: 25%;
+}
+
+.projects__section {
+  background-color: #b5dcee;
+}
+.projects img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+.projects > div {
+  border: 1px solid white;
+  padding: 10px;
+}
+.projects__project-links {
+  text-align: center;
+}
+.projects__project-links a {
+  padding-right: 5px;
+}
+
+.contact__section {
+  background-color: #004c6d;
+  color: white;
+  min-height: 50px;
+}
+.contact__list li {
+  list-style-type: none;
+  margin: 10px;
+  display: inline;
+  padding-bottom: 10px;
+  background-color: #b5dcee;
+}
+.contact__list li a i {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav-bar__list {
+    display: none;
+  }
+  .nav-bar__hamburger {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
