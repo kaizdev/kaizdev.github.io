@@ -1,14 +1,14 @@
 # Welcome to my portfolio website
 
-Hi, I'm Kai
+Hi, i'm Kai
 
-After 10+ years in banking and finance, I've recently transitioned to the world of programming.
+Welcome to my portfolio website, built using HTML, SCSS, and JavaScript.
 
-On my portfolio page, you'll find;
+On my [portfolio page](https://kaizdev.github.io/), you'll find;
 
 -   A little bit about me and my background
 -   Some of the projects I've worked on
 -   The skills I've picked up along the way
 -   How to reach me
 
-Thanks for stopping by
+Thanks for stopping by!
