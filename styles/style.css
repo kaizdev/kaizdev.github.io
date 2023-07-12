@@ -39,7 +39,7 @@ section {
   padding-right: 10px;
 }
 
-#mobile-nav {
+#mobileNav {
   display: none;
   position: fixed;
   top: 0;
@@ -53,18 +53,18 @@ section {
   justify-content: center;
   font-size: 2rem;
 }
-#mobile-nav ul {
+#mobileNav ul {
   list-style-type: none;
 }
-#mobile-nav ul li {
+#mobileNav ul li {
   padding: 10px;
 }
-#mobile-nav ul li a {
+#mobileNav ul li a {
   color: white;
   text-decoration: none;
 }
 
-#close-btn {
+#closeBtn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -112,10 +112,11 @@ section {
   background-color: #b5dcee;
 }
 .projects img {
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: 300px;
   display: block;
   margin: auto;
+  border-radius: 25%;
 }
 .projects > div {
   border: 1px solid white;
